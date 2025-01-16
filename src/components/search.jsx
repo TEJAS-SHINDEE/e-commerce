@@ -1,32 +1,22 @@
 import React from 'react'
-
-export const Search = () => {
+import { Outlet } from 'react-router-dom';
+import { Collections } from './collections';
+import { SortBy } from './sort-by';
+import {Card } from './card';
+export const Search = ({obj}) => {
   return (
     <>
         <div className= 'px-4 gap-6 flex mx-auto bg-[#fafafa]'>
 
-            <aside className='h-full w-[12%] '> 
-                <p className='text-xs text-gray-500 leading-6'>Collections</p>
-                <ul className='text-[.93rem] leading-7 text-black'>
-                    <li className='underline underline-offset-4 cursor-none'><a href="">All</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Bags</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Drinkware</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Electronics</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Footwear</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Headware</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Hoodies</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Jackets</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Kids</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Pets</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Shirts</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Stickers</a></li>
-                </ul>
-            </aside>
+            <Collections />
 
 
-            <div className='h-full w-[76%]  rounded-lg '> 
+            <div className='h-full w-[76%]  rounded-lg mx-auto'> 
                 <ul className='grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
-                        <li className='relative boder hover:ring-1 rounded-md bg-white border border-gray-200'> 
+                    {obj.slice(8,21).map((item)=>(
+                        <Card key={item?.id} image={item?.image} title={item?.title} price={item?.price} />
+                    ))}
+                        {/* <li className='relative boder hover:ring-1 rounded-md bg-white border border-gray-200'> 
                             <a href=""> 
                                 <img className='hover:scale-105 duration-300' src="/assets/slipon.png" alt="" /> 
                                 <div className='absolute gap-2 bottom-2 left-4 h-[40px]  bg-white p-2 mr-4 flex felx-row justify-around rounded-full border border-gray-200'>
@@ -187,21 +177,13 @@ export const Search = () => {
 							        <p className='flex-none bg-blue-600 rounded-full p-1 text-sm text-white flex items-center'>$45.00 USD</p>
 						        </div>
                             </a> 
-                        </li>
+                        </li> */}
                 </ul>
             </div>
 
 
-            <aside className='h-full w-[12%] '> 
-                <p className='text-xs text-gray-500 leading-6'>Sort by</p>
-                <ul className='text-[.93rem] leading-7 text-black'>
-                    <li className='underline underline-offset-4 cursor-none'><a href="">Relevance</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Trending</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Latest Arrivals</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Price: Low to High</a></li>
-                    <li className='hover:underline underline-offset-4'><a href="">Price: High to Low</a></li>
-                </ul>
-            </aside>
+            <SortBy />
+            
         </div>
     </>
   );

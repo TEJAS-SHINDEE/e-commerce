@@ -1,7 +1,7 @@
 import React from 'react'
-
 export const Terms = () => {
   return (
+    <>
     <div className='mx-auto md:w-[65%] p-10  '>
         <h1 className='text-5xl font-bold p-6'>Terms & Conditions</h1>
         <article className='leading-7 px-6'>
@@ -14,5 +14,7 @@ export const Terms = () => {
         </article>
         <address className='p-6'>This document was last updated on April 20, 2023.</address>
     </div>
+
+    </>
   );
 };

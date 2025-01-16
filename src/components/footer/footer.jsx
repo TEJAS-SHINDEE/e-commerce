@@ -34,11 +34,11 @@ export function Footer() {
                 </div>
 
                 <div className="sub-footer text-gray-500  border-t border-gray-300 py-6 px-4">
-                    <div className='flex flex-row  items-center text-sm '>
+                    <div className='flex flex-col  items-center text-sm md:flex-row'>
                         <p><i className="ri-copyright-line"> </i> 2023-2025 ACME, Inc. All Right reserved.</p>
                         <p className='px-4 text-gray-500'> | </p>
-                        <p><a href="" className='ml-auto'>View the source</a></p>
-                        <p className='ml-auto font-semibold text-black'><a href="">Created by <i className="ri-triangle-fill"></i> vercel</a></p>
+                        <p><a href="" className='md:ml-auto '>View the source</a></p>
+                        <p className='ml-auto font-semibold text-black'><a href="">Created by <span><i className="ri-triangle-fill"></i></span> vercel</a></p>
                     </div>
                 </div>
             </div>
