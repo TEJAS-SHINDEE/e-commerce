@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 import { Product } from "./components/product.jsx";
 import { Shirts } from "./components/categories/shirts.jsx";
 import { Electronics } from "./components/categories/electronics.jsx";
-import { Jewelery } from "./components/categories/jewelery.jsx";
+import { Jewelery } from "./components/categories/Jewelery.jsx";
 import { Womens } from "./components/categories/womens.jsx";
 import { Mens } from "./components/categories/mens.jsx";
 import { Trending } from "./components/trending.jsx";
