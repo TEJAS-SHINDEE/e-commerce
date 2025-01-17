@@ -1,22 +1,19 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom';
-import { Collections } from './collections';
-import { SortBy } from './sort-by';
-import {Card } from './card';
-export const Search = ({obj}) => {
-  return (
-    <>
-        <div className= 'px-4 gap-6 flex mx-auto bg-[#fafafa]'>
+import React from "react";
+import { Collections } from "./collections";
+import { SortBy } from "./sort-by";
+import { Card } from "./card";
+export const Search = ({ obj }) => {
+	return (
+		<>
+			<div className="px-4 gap-6 flex mx-auto bg-[#fafafa]">
+				<Collections />
 
-            <Collections />
-
-
-            <div className='h-full w-[76%]  rounded-lg mx-auto'> 
-                <ul className='grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
-                    {obj.slice(8,21).map((item)=>(
-                        <Card key={item?.id} image={item?.image} title={item?.title} price={item?.price} />
-                    ))}
-                        {/* <li className='relative boder hover:ring-1 rounded-md bg-white border border-gray-200'> 
+				<div className="h-full w-[76%]  rounded-lg mx-auto">
+					<ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+						{obj.slice(1, 22).map((item) => (
+							<Card key={item?.id} item={item} />
+						))}
+						{/* <li className='relative boder hover:ring-1 rounded-md bg-white border border-gray-200'> 
                             <a href=""> 
                                 <img className='hover:scale-105 duration-300' src="/assets/slipon.png" alt="" /> 
                                 <div className='absolute gap-2 bottom-2 left-4 h-[40px]  bg-white p-2 mr-4 flex felx-row justify-around rounded-full border border-gray-200'>
@@ -178,14 +175,11 @@ export const Search = ({obj}) => {
 						        </div>
                             </a> 
                         </li> */}
-                </ul>
-            </div>
+					</ul>
+				</div>
 
-
-            <SortBy />
-            
-        </div>
-    </>
-  );
+				<SortBy />
+			</div>
+		</>
+	);
 };
-
