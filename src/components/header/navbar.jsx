@@ -60,7 +60,7 @@ export function Navbar() {
 						className="flex flex-row justify-between px-4 w-full avtice:ring-1"
 					>
 						<input
-							className="flex flex-row ring-blue-200 bg-transparent appearance-none focus:uotline-none"
+							className="flex focus:outline-offset-2 outline-none flex-row ring-blue-200 bg-transparent appearance-none focus:uotline-none"
 							type="text"
 							placeholder="Search for products"
 							name="q"
