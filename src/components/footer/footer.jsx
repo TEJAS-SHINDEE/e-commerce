@@ -27,7 +27,7 @@ export function Footer() {
 							<li>
 								<a
 									className="block text-black underline-offset-4 p-2 hover:underline"
-									href="https://e-commerce-v2gw.vercel.app/"
+									href="/"
 								>
 									Home
 								</a>
@@ -35,7 +35,7 @@ export function Footer() {
 							<li>
 								<a
 									className="block text-gray-500 hover:text-black underline-offset-4 p-2 hover:underline"
-									href="https://e-commerce-v2gw.vercel.app//about"
+									href="/about"
 								>
 									About
 								</a>
@@ -43,7 +43,7 @@ export function Footer() {
 							<li>
 								<a
 									className="block text-gray-500 hover:text-black underline-offset-4 p-2 hover:underline"
-									href="https://e-commerce-v2gw.vercel.app//terms"
+									href="/terms"
 								>
 									Terms & Conditions
 								</a>
@@ -51,7 +51,7 @@ export function Footer() {
 							<li>
 								<a
 									className="block text-gray-500 hover:text-black underline-offset-4 p-2 hover:underline"
-									href="https://e-commerce-v2gw.vercel.app//shipping"
+									href="/shipping"
 								>
 									Shipping & Return Policy
 								</a>
@@ -59,7 +59,7 @@ export function Footer() {
 							<li>
 								<a
 									className="block text-gray-500 hover:text-black underline-offset-4 p-2 hover:underline"
-									href="https://e-commerce-v2gw.vercel.app//privacy"
+									href="/privacy"
 								>
 									Privacy Policy
 								</a>
@@ -67,7 +67,7 @@ export function Footer() {
 							<li>
 								<a
 									className="block text-gray-500 hover:text-black underline-offset-4 p-2 hover:underline"
-									href="https://e-commerce-v2gw.vercel.app//faq"
+									href="/faq"
 								>
 									FAQ
 								</a>
