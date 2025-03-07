@@ -53,22 +53,22 @@ function App() {
 						<Route path="/cart" element={<Cart obj={data} />}>
 							{" "}
 						</Route>
-						<Route path="https://e-commerce-v2gw.vercel.app//about" element={<About />}>
+						<Route path="/about" element={<About />}>
 							{" "}
 						</Route>
-						<Route path="https://e-commerce-v2gw.vercel.app//terms" element={<Terms />}>
+						<Route path="/terms" element={<Terms />}>
 							{" "}
 						</Route>
-						<Route path="https://e-commerce-v2gw.vercel.app//privacy" element={<Privacy />}>
+						<Route path="/privacy" element={<Privacy />}>
 							{" "}
 						</Route>
-						<Route path="https://e-commerce-v2gw.vercel.app//shipping" element={<Shipping />}>
+						<Route path="/shipping" element={<Shipping />}>
 							{" "}
 						</Route>
-						<Route path="https://e-commerce-v2gw.vercel.app//faq" element={<Faq />}>
+						<Route path="/faq" element={<Faq />}>
 							{" "}
 						</Route>
-						<Route path="https://e-commerce-v2gw.vercel.app//search" element={<Search obj={data} />}>
+						<Route path="/search" element={<Search obj={data} />}>
 							{" "}
 						</Route>
 						<Route path="search">
