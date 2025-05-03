@@ -21,7 +21,7 @@ import { Low } from "./components/low.jsx";
 import { High } from "./components/high.jsx";
 import { Cart } from "./components/cart.jsx";
 import { Query } from "./components/query.jsx";
-
+	
 function App() {
 	const [cartItem, setCartItem] = useState([]);
 	const [data, setData] = useState([]);
